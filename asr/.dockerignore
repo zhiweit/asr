@@ -1,0 +1,7 @@
+.venv
+data/
+common_voice.zip
+__pycache__/
+info/
+list/
+*.mp3
