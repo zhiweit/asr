@@ -31,7 +31,9 @@ def generate_actions():
                 "down_votes": row["down_votes"],
                 "age": row["age"],
                 "gender": row["gender"],
+                "accent": row["accent"],
                 "duration": row["duration"],
+                "generated_text": row["generated_text"],
             }
 
             yield doc
@@ -51,8 +53,10 @@ def create_index(client: Elasticsearch, index_name: str):
                     "down_votes": {"type": "integer"},
                     "age": {"type": "text"},
                     "gender": {"type": "text"},
+                    "accent": {"type": "text"},
                     "duration": {"type": "float"},
-                }
+                    "generated_text": {"type": "text"},
+                },
             },
         },
         ignore=400,
