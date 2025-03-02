@@ -1,0 +1,5 @@
+data/
+asr/common_voice.zip
+# ignore all venv
+*.venv/
+**/__pycache__/
