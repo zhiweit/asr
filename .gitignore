@@ -3,3 +3,10 @@ asr/common_voice.zip
 # ignore all venv
 *.venv/
 **/__pycache__/
+
+# ignore all env files
+.env
+ca.crt
+
+
+*.log
