@@ -83,6 +83,11 @@ services:
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
       - xpack.ml.use_auto_machine_memory_percent=true
+      - http.cors.allow-origin="*"
+      - http.cors.enabled=true
+      - http.cors.allow-credentials=true
+      - http.cors.allow-methods=OPTIONS, HEAD, GET, POST, PUT, DELETE
+      - http.cors.allow-headers=X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept, x-elastic-client-meta
     mem_limit: ${MEM_LIMIT}
     ulimits:
       memlock:
@@ -124,6 +129,12 @@ services:
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
       - xpack.ml.use_auto_machine_memory_percent=true
+      - http.cors.allow-origin="*"
+      - http.cors.enabled=true
+      - http.cors.allow-credentials=true
+      - http.cors.allow-methods=OPTIONS, HEAD, GET, POST, PUT, DELETE
+      - http.cors.allow-headers=X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept, x-elastic-client-meta
+
     mem_limit: ${MEM_LIMIT}
     ulimits:
       memlock:
