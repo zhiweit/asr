@@ -65,6 +65,10 @@ curl -k -X POST "https://localhost:9200/_security/api_key" \
 - Copy the `encoded` field from the expected output and add it to the `.env.local` file under `deployment-design/search-ui/search-ui/.env.local`.
 
 ```bash
+cp .env.sample .env.local
+```
+
+```bash
 NEXT_PUBLIC_ELASTICSEARCH_API_KEY=<change this to the encoded field from the expected output>
 ```
 
