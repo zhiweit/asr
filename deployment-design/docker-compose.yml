@@ -179,6 +179,16 @@ services:
       timeout: 10s
       retries: 120
 
+  search-ui:
+    image: search-ui
+    build:
+      context: ./search-ui/search-ui
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - es01
+    
 volumes:
   certs:
     driver: local
