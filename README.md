@@ -1,9 +1,6 @@
 ### Automated Speech Recognition (ASR) API
 
-[API endpoint](http://52.221.211.118:8001/)
-
-API Endpoints
-Test the API endpoints via swagger ui at http://52.221.211.118:8001/docs
+API docs and testing at http://52.221.211.118:8001/docs
 
 ```bash
 GET http://52.221.211.118:8001/ping/
